@@ -39,6 +39,10 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
   <Target Name="TestWebCompiler" AfterTargets="BeforeBuild">
     <!-- Test if Excubo.WebCompiler is installed (recommended) -->
     <Exec Command="webcompiler -h" ContinueOnError="true" StandardOutputImportance="low" StandardErrorImportance="low" LogStandardErrorAsError="false" IgnoreExitCode="true">
